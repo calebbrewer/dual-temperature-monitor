@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  calebbrewer</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="app">
+	<section class="temps">
+		<div>
+			<div>
+				<div>Temp1</div>
+				<span id="temp1"></span> &#8457;
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>Temp 2</div>
+				<span id="temp2"></span> &#8457;
+			</div>
+		</div>
+	</section>
+
+	<section class="charts">
+		<div class="chart-wrap">
+			<div id="chart" class="chart"></div>
+		</div>		
+	</section>
+	<section>
+		<button class="range" id="date-start">Start</button>
+		<button class="range" id="date-end">End</button>
+		<div>
+			<button id="download-temp-data">Download All Temp Data</button>
+		</div>
+	</section>
+</div>
+  <script src='https://www.gstatic.com/charts/loader.js'></script>
+<script src='https://www.gstatic.com/firebasejs/4.5.0/firebase.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.3.6/papaparse.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

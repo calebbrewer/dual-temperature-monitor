@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(to top, #3fa2c3, #55b1c6);
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.app section {
+  text-align: center;
+  padding: 16px;
+}
+.app section.temps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-align: center;
+  height: 182px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.app section.temps > div:nth-child(2) {
+  color: #ccc;
+  border-color: #ccc;
+}
+.app section.temps > div {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+.app section.temps > div > div {
+  width: 100%;
+}
+.app .chart-wrap {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+@media (min-width: 600px) {
+  .app .chart-wrap {
+    width: 500px;
+  }
+}
+@media (min-width: 800px) {
+  .app .chart-wrap {
+    width: 700px;
+  }
+}
+@media (min-width: 800px) {
+  .app .chart-wrap {
+    width: 860px;
+  }
+}
+
+button {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #3fa2c3;
+  background: white;
+  border: none;
+  outline: none;
+  margin: 8px;
+  padding: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+button:hover {
+  color: white;
+  background: #3fa2c3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+button.range {
+  color: white;
+  background: none;
+  box-shadow: none;
+}
+
+select {
+  width: 64px;
+  -webkit-appearance: none;
+}
